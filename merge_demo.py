@@ -9,6 +9,8 @@ logger.setLevel(logging.DEBUG)
 
 ec2_client = boto3.client("ec2")
 
+
+
 def handler(event, context):
     """This function should cleanup unattached network interfaces
     describe nifs
